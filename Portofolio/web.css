@@ -1,3 +1,82 @@
-.port {
-  background-color: black;
+* {
+  margin: 0;
+  padding: 0;
+  top: 0;
+  overflow-x: hidden;
+}
+
+.header {
+  position: fixed;
+  background-color: #3e3c3c;
+  width: 100%;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+
+.header-content a {
+  text-decoration: none;
+  color: white;
+}
+
+.logo {
+  font-size: 1.5rem;
+  padding: 0.8em 0;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  gap: 20px;
+  padding: 1rem;
+}
+
+.links img {
+  padding-top: 0.5rem;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .hamburger {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+  }
+
+  .links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #3e3c3c;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #menu-toggle:checked ~ .links {
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) {
+  .links {
+    display: flex !important;
+    flex-direction: row;
+  }
 }
