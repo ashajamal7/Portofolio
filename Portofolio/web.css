@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -79,4 +81,62 @@
     display: flex !important;
     flex-direction: row;
   }
+}
+
+.section{
+    background-color: #1C1A19;
+}
+
+.first_pg{
+    display: flex;
+    width: 100%;
+}
+
+.text_links{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.media_links{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    gap:20px;
+}
+
+.text{
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+}
+
+.hello{
+    color: #F55800;
+    font-family: Crete Round;
+    font-size: 72px;   
+}
+
+.text h2{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.text p{
+    font-size: 23px;
+}
+
+.fp_image{
+   margin-left: auto;
+   background-color: #1C1A19;
+}
+
+.fp_image img{
+    width: 80%;
+    float: right;
 }
